@@ -1,0 +1,2 @@
+constantes simbolicas vs no simbolicas.
+define vs const?

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1689979896 source:c:\users\ncaruso\desktop\utn\1 año\laboratorio 1\final\final_labo1\encuesta.cpp
+	<iostream>
+	"Encuesta.h"
+
+1689979664 c:\users\ncaruso\desktop\utn\1 año\laboratorio 1\final\final_labo1\encuesta.h
+	<iostream>
+
+1689979664 source:c:\users\ncaruso\desktop\utn\1 año\laboratorio 1\final\final_labo1\main.cpp
+	<iostream>
+	"Encuesta.h"
+

@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1687476740 source:c:\users\ncaruso\desktop\utn\1 año\programacion 1\ejercicio6_9\ejercicio7_1\venta.cpp
+	<iostream>
+	"Venta.h"
+
+1687480535 c:\users\ncaruso\desktop\utn\1 año\programacion 1\ejercicio6_9\ejercicio7_1\venta.h
+	"Articulo.h"
+	<iostream>
+
+1687480409 source:c:\users\ncaruso\desktop\utn\1 año\programacion 1\ejercicio6_9\ejercicio7_1\main.cpp
+	<iostream>
+	"Articulo.h"
+	"Venta.h"
+
+1687478831 c:\users\ncaruso\desktop\utn\1 año\programacion 1\ejercicio6_9\ejercicio7_1\articulo.h
+
+1687478831 source:c:\users\ncaruso\desktop\utn\1 año\programacion 1\ejercicio6_9\ejercicio7_1\articulo.cpp
+	<iostream>
+	"Articulo.h"
+

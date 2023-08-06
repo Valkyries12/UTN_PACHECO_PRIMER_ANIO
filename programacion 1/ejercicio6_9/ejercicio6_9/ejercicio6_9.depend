@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1687223892 source:c:\users\ncaruso\desktop\utn\1 año\programacion 1\ejercicio6_9\ejercicio6_9\main.cpp
+	<iostream>
+	"Articulo.h"
+
+1687274886 c:\users\ncaruso\desktop\utn\1 año\programacion 1\ejercicio6_9\ejercicio6_9\articulo.h
+
+1687274900 source:c:\users\ncaruso\desktop\utn\1 año\programacion 1\ejercicio6_9\ejercicio6_9\articulo.cpp
+	<iostream>
+	"Articulo.h"
+

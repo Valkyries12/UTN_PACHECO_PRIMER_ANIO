@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1687908754 source:c:\users\ncaruso\desktop\utn\1 año\programacion 1\tp_colaborativo_2\tp_colaborativo_2\main.cpp
+	<iostream>
+	"Empleado.h"
+
+1687911714 source:c:\users\ncaruso\desktop\utn\1 año\programacion 1\tp_colaborativo_2\tp_colaborativo_2\empleado.cpp
+	<iostream>
+	"Empleado.h"
+
+1687912547 c:\users\ncaruso\desktop\utn\1 año\programacion 1\tp_colaborativo_2\tp_colaborativo_2\empleado.h
+	"DiaDeTrabajo.h"
+
+1687909625 source:c:\users\ncaruso\desktop\utn\1 año\programacion 1\tp_colaborativo_2\tp_colaborativo_2\diadetrabajo.cpp
+	<iostream>
+	"DiaDeTrabajo.h"
+
+1687911294 c:\users\ncaruso\desktop\utn\1 año\programacion 1\tp_colaborativo_2\tp_colaborativo_2\diadetrabajo.h
+

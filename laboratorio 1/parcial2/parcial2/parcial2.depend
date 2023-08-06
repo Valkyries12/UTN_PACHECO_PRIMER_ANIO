@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1687562260 source:c:\users\ncaruso\desktop\utn\1 año\laboratorio 1\parcial2\parcial2\main.cpp
+	<iostream>
+	"Venta.h"
+
+1687562149 source:c:\users\ncaruso\desktop\utn\1 año\laboratorio 1\parcial2\parcial2\venta.cpp
+	<iostream>
+	"Venta.h"
+
+1687562149 c:\users\ncaruso\desktop\utn\1 año\laboratorio 1\parcial2\parcial2\venta.h
+	<iostream>
+
