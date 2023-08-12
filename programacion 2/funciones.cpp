@@ -189,3 +189,42 @@ int sumarValores(int matriz[10][10]) {
 
     return acumulador;
 }
+
+
+int strcmp(char *palabra1, char *palabra2) {
+    int resultado;
+    int puntaje1 = 0;
+    int puntaje2 = 0;
+    int contador = 0;
+
+
+    char letraActual = palabra1[contador];
+    while(letraActual != '\0') {
+        puntaje1 += (int) letraActual;
+        contador++;
+        letraActual = palabra1[contador];
+    }
+    contador = 0;
+
+    letraActual = palabra2[contador];
+    while(letraActual != '\0') {
+        puntaje2 += (int) letraActual;
+        contador++;
+        letraActual = palabra2[contador];
+    }
+    contador = 0;
+
+    cout << "puntaje 1 es: " << puntaje1 << endl;
+    cout << "puntaje 2 es: " << puntaje2 << endl;
+
+    if (puntaje1 == puntaje2) {
+        resultado = 0;
+    }
+    else if (puntaje1 < puntaje2) {
+        resultado = -1;
+    } else {
+        resultado = 1;
+    }
+
+    return resultado;
+}
