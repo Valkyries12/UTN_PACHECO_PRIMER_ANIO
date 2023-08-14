@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1691958168 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\actividad n1\actividad_n1\main.cpp
+	<iostream>
+	"Fecha.h"
+
+1691958239 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\actividad n1\actividad_n1\fecha.h
+
+1691958090 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\actividad n1\actividad_n1\src\fecha.cpp
+	<iostream>
+	<cstring>
+	"Fecha.h"
+
