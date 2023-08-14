@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1691974054 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\problema3_batidos\main.cpp
+	<iostream>
+
+1691975606 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\problema3_batidos\src\bidon.cpp
+	<iostream>
+	"Bidon.h"
+
+1691975588 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\problema3_batidos\bidon.h
+	"Vaso.h"
+
+1691975555 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\problema3_batidos\vaso.h
+
+1691975576 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\problema3_batidos\src\vaso.cpp
+	<iostream>
+	"Vaso.h"
+
