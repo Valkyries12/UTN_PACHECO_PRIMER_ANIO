@@ -62,6 +62,11 @@ int main()
         system("cls");
     } while(opcionBatido != 0);
 
+    for (int i = 0; i < 3; i++) {
+        bidones[i].mostrarCantidadVendida();
+        bidones[i].mostrarLitrosRestante();
+    }
+
 
     return 0;
 }

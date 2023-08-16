@@ -1,6 +1,5 @@
 #include <iostream>
-#include "Bidon.h"
-
+#include "../Bidon.h"
 /**********************************/
 /***constructores y destructores***/
 /**********************************/
@@ -75,4 +74,14 @@ int Bidon::getCantidadVendida() {
 /**********************************/
 void Bidon::servirBatido(Vaso vaso) {
     _litros -= vaso.getCapacidad();
+    _cantidadVendida++;
 }
+
+void Bidon::mostrarLitrosRestante() {
+    std::cout << "Quedan " << _litros / 1000 << " litros de " << _sabor << std::endl;
+}
+
+void Bidon::mostrarCantidadVendida() {
+    std::cout << "Se vendieron " << _cantidadVendida << " unidades de " << _sabor << std::endl;
+}
+

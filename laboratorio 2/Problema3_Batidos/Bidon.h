@@ -23,6 +23,8 @@ class Bidon
 
         //metodos
         void servirBatido(Vaso vaso);
+        void mostrarLitrosRestante();
+        void mostrarCantidadVendida();
 
 
     protected:
