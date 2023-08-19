@@ -22,7 +22,7 @@ class Bidon
         int getCantidadVendida();
 
         //metodos
-        void servirBatido(Vaso vaso);
+        void servirBatido(Vaso *vaso);
         void mostrarLitrosRestante();
         void mostrarCantidadVendida();
 

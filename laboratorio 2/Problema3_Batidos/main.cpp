@@ -32,11 +32,12 @@ int main()
     Vaso vasoChico(1, 150);
     Vaso vasoMediano(2, 200);
     Vaso vasoGrande(3, 300);
-    Vaso vasoActual;
-    Bidon batidoActual;
+    Vaso *vasoActual;
+    Bidon *batidoActual;
 
     Bidon bidones[3] = {batidoBanana, batidoAnana, batidoSandia};
     Vaso vasos[3] = {vasoChico, vasoMediano, vasoGrande};
+
 
     do {
         cout << "¿Cual batido desea tomar?" << endl;
@@ -54,12 +55,13 @@ int main()
             cout << "Ingrese una opcion: ";
             cin >> opcionVaso;
 
-            batidoActual = bidones[opcionBatido-1];
-            vasoActual = vasos[opcionVaso-1];
-            batidoActual.servirBatido(vasoActual);
+            batidoActual = &bidones[opcionBatido-1];
+            vasoActual = &vasos[opcionVaso-1];
+            cout << "batido actual: " << batidoActual << " Vaso actual es: " << vasoActual << endl;
+            batidoActual->servirBatido(vasoActual);
         }
 
-        system("cls");
+        //system("cls");
     } while(opcionBatido != 0);
 
     for (int i = 0; i < 3; i++) {

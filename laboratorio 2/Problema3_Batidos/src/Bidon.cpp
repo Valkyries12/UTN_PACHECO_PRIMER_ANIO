@@ -72,8 +72,8 @@ int Bidon::getCantidadVendida() {
 /**********************************/
 /*************Metodos**************/
 /**********************************/
-void Bidon::servirBatido(Vaso vaso) {
-    _litros -= vaso.getCapacidad();
+void Bidon::servirBatido(Vaso *vaso) {
+    _litros -= vaso->getCapacidad();
     _cantidadVendida++;
 }
 
