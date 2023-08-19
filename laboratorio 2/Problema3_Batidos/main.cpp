@@ -57,11 +57,11 @@ int main()
 
             batidoActual = &bidones[opcionBatido-1];
             vasoActual = &vasos[opcionVaso-1];
-            cout << "batido actual: " << batidoActual << " Vaso actual es: " << vasoActual << endl;
+            //cout << "batido actual: " << batidoActual << " Vaso actual es: " << vasoActual << endl;
             batidoActual->servirBatido(vasoActual);
         }
 
-        //system("cls");
+        system("cls");
     } while(opcionBatido != 0);
 
     for (int i = 0; i < 3; i++) {
