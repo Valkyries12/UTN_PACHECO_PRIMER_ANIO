@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1692649149 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\tp 2 clases\tp_2_clases\main.cpp
+	<iostream>
+	<cstring>
+	"Articulo.h"
+
+1692646560 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\tp 2 clases\tp_2_clases\src\articulo.cpp
+	<iostream>
+	<cstring>
+	"Articulo.h"
+
+1692643582 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\tp 2 clases\tp_2_clases\articulo.h
+
