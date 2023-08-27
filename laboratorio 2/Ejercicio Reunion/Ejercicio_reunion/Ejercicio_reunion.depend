@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1692839196 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\main.cpp
+	<iostream>
+	"Reunion.h"
+
+1692657320 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\src\fecha.cpp
+	<ctime>
+	<iostream>
+	"fecha.h"
+
+1692656898 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\fecha.h
+
+1692657320 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\src\horario.cpp
+	<iostream>
+	<ctime>
+	"Horario.h"
+
+1692657320 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\horario.h
+	<string>
+
+1692657531 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\src\fechahorario.cpp
+	<iostream>
+	"FechaHorario.h"
+	"fecha.h"
+	"horario.h"
+
+1692657562 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\fechahorario.h
+	"fecha.h"
+	"horario.h"
+
+1692660370 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\src\persona.cpp
+	<iostream>
+	"Persona.h"
+
+1692659055 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\persona.h
+
+1692838801 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\src\reunion.cpp
+	<iostream>
+	"Reunion.h"
+	"../Persona.h"
+	"cstring"
+
+1692838801 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\reunion.h
+	"Persona.h"
+	"Fecha.h"
+	"Horario.h"
+	"Lugar.h"
+	"Tema.h"
+	"Duracion.h"
+
+1692798728 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\lugar.h
+
+1692799277 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\tema.h
+
+1692798747 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\src\lugar.cpp
+	<iostream>
+	"Lugar.h"
+
+1692799323 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\src\tema.cpp
+	<iostream>
+	"Tema.h"
+
+1692799675 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\src\duracion.cpp
+	<iostream>
+	"Duracion.h"
+
+1692799510 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\laboratorio 2\ejercicio reunion\ejercicio_reunion\duracion.h
+
