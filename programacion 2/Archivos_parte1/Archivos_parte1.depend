@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1694996366 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte1\main.cpp
+	<iostream>
+	"Menu.h"
+	"Empresa.h"
+	"Archivo.h"
+
+1694994997 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte1\src\empresa.cpp
+	<iostream>
+	<cstring>
+	"Empresa.h"
+
+1694994817 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte1\include\empresa.h
+
+1694993857 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte1\src\menu.cpp
+	<iostream>
+	"Menu.h"
+	"Empresa.h"
+	"Archivo.h"
+
+1694991942 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte1\include\menu.h
+	"Empresa.h"
+
+1694996707 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte1\src\archivo.cpp
+	<iostream>
+	<cstring>
+	"Archivo.h"
+	"Empresa.h"
+
+1694994910 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte1\include\archivo.h
+	"Empresa.h"
+
