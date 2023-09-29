@@ -26,7 +26,7 @@ void Menu::dibujarMenu(int &opcionMenu) {
     std::cin >> opcionMenu;
 }
 
-void Menu::cargar(Empresa * empresas) {
+void Menu::cargarHardcodeo(Empresa * empresas) {
     empresas[0] = Empresa(1, "empresa1", 100, 1, 1, true);
     empresas[1] = Empresa(2, "empresa2", 50, 2, 2, true);
     empresas[2] = Empresa(3, "empresa3", 200, 3, 3, true);

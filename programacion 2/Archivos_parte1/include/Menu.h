@@ -14,7 +14,7 @@ class Menu
 
         //metodos
         void dibujarMenu(int &opcionMenu);
-        void cargar(Empresa* empresas);
+        void cargarHardcodeo(Empresa* empresas);
         void mostrar(Empresa* empresas);
 
     protected:

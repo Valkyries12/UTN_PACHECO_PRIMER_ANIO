@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1695943789 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\main.cpp
+	<iostream>
+	"Tarjeta.h"
+	"Viaje.h"
+	"Fecha.h"
+
+1695595519 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\src\fecha.cpp
+	<ctime>
+	<iostream>
+	"fecha.h"
+
+1695595518 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\include\fecha.h
+	<string>
+
+1695943939 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\src\tarjeta.cpp
+	<iostream>
+	"cstring"
+	"Tarjeta.h"
+	"Fecha.h"
+
+1695943939 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\include\tarjeta.h
+	"Fecha.h"
+
+1695602070 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\src\viaje.cpp
+	<iostream>
+	"cstring"
+	"Viaje.h"
+	"Fecha.h"
+
+1695601112 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\include\viaje.h
+	"Fecha.h"
+
+1695945475 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\src\menu.cpp
+	<iostream>
+	"cstring"
+	"Menu.h"
+
+1695945434 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\include\menu.h
+
