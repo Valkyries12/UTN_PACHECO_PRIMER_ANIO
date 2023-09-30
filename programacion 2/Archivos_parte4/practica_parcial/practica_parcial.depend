@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1696098877 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\main.cpp
+1696102224 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\main.cpp
 	<iostream>
 	"Tarjeta.h"
 	"Viaje.h"
@@ -33,14 +33,14 @@
 1696096798 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\include\viaje.h
 	"Fecha.h"
 
-1696098991 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\src\menu.cpp
+1696101598 source:c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\src\menu.cpp
 	<iostream>
 	"cstring"
 	"string"
 	"Menu.h"
 	"Tarjeta.h"
 
-1696097256 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\include\menu.h
+1696101586 c:\users\ncaruso\desktop\utn\utn_pacheco_primer_anio\programacion 2\archivos_parte4\practica_parcial\include\menu.h
 	"Tarjeta.h"
 	"Viaje.h"
 

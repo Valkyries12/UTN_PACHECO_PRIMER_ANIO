@@ -230,22 +230,11 @@ void Menu::puntoA() {
     int qtyViajesSubte = 0;
     bool tarjetaEncontrada = false;
     FILE* pFile;
-    Tarjeta tarjeta;
     Viaje viaje;
 
     std::cout << "Ingrese numero de tarjeta: ";
     cargarCadena(numeroTarjeta, 17);
-
-    pFile = fopen("tarjetas.dat", "rb");
-    if (pFile != nullptr) {
-        while(fread(&tarjeta, sizeof(Tarjeta), 1, pFile) == 1) {
-            if (strcmp(tarjeta.getNumeroTarjeta().c_str(), numeroTarjeta) == 0) {
-                tarjetaEncontrada = true;
-                break;
-            }
-        }
-        fclose(pFile);
-    }
+    tarjetaEncontrada = verificarTarjetaExistente(numeroTarjeta);
 
     if (tarjetaEncontrada) {
         pFile = fopen("viajes.dat", "rb");
@@ -273,9 +262,49 @@ void Menu::puntoA() {
             setMensaje("El punto ha ha sido resuelto exitosamente.");
         }
     } else {
-        setMensaje("No se ha encontrado el numero de tarjeta.");
+        setMensaje("El numero de tarjeta es inexistente.");
     }
 
 
+}
+
+bool Menu::verificarTarjetaExistente(char* numeroTarjeta) {
+    Tarjeta tarjeta;
+    bool tarjetaEncontrada = false;
+    FILE* pFile;
+
+    pFile = fopen("tarjetas.dat", "rb");
+    if (pFile != nullptr) {
+        while(fread(&tarjeta, sizeof(Tarjeta), 1, pFile) == 1) {
+            if (strcmp(tarjeta.getNumeroTarjeta().c_str(), numeroTarjeta) == 0) {
+                tarjetaEncontrada = true;
+                break;
+            }
+        }
+        fclose(pFile);
+    }
+
+    return tarjetaEncontrada;
+}
+
+void Menu::puntoB() {
+    Viaje viajeAcual;
+    Viaje viajeAux;
+    FILE* pFile;
+    bool isSuccesfull = false;
+
+    pFile = fopen("viajes.dat", "rb");
+    if (pFile != nullptr) {
+        fread(&viajeAux, sizeof(Viaje), 1, pFile);
+        while(fread(&viajeAcual, sizeof(Viaje), 1, pFile) == 1) {
+            if (viajeAcual.getImporte() < viajeAux.getImporte()) {
+                viajeAux = viajeAcual;
+            }
+        }
+        fclose(pFile);
+        isSuccesfull = true;
+    }
+
+    isSuccesfull ? setMensaje(viajeAux.toString()) : setMensaje("Ha ocurrido un error al realizar el punto B.");
 }
 

@@ -38,6 +38,7 @@ class Menu
         void leerTarjetas();
         void leerViajes();
         void puntoA();
+        void puntoB();
 
     protected:
 
@@ -53,6 +54,7 @@ class Menu
 
         //metodos
         void cargarCadena(char *palabra, int tamano);
+        bool verificarTarjetaExistente(char* numeroTarjeta);
 
 };
 
