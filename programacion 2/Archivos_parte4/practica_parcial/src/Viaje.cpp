@@ -11,12 +11,11 @@ Viaje::Viaje()
     //ctor
 }
 
-Viaje::Viaje(std::string numeroTarjeta, int medioTransporte, int dia, int mes, int anio, float importe) {
+Viaje::Viaje(std::string numeroTarjeta, int medioTransporte, int dia, int mes, int anio) {
     _numeroViaje++;
     setNumeroTarjeta(numeroTarjeta);
     setMedioTransporte(medioTransporte);
     setFechaViaje(dia, mes, anio);
-    setImporte(importe);
     setEstado(true);
 }
 
@@ -73,4 +72,22 @@ bool Viaje::getEstado() const {
 
 void Viaje::setEstado(bool estado) {
     _estado = estado;
+}
+
+//metodos
+void Viaje::calcularImporte() {
+    switch(_medioTransporte) {
+        case 1:
+            //colectivo
+            setImporte(50);
+            break;
+        case 2:
+            //subte
+            setImporte(60);
+            break;
+        case 3:
+            //tren
+            setImporte(40);
+            break;
+    }
 }

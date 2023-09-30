@@ -9,7 +9,7 @@ class Viaje
     public:
         //constructores y detructores
         Viaje();
-        Viaje(std::string numeroTarjeta, int medioTransporte, int dia, int mes, int anio, float importe);
+        Viaje(std::string numeroTarjeta, int medioTransporte, int dia, int mes, int anio);
         virtual ~Viaje();
 
         //getters y setters
@@ -28,6 +28,9 @@ class Viaje
 
         //atributos
         static int _numeroViaje;
+
+        //metodos
+        void calcularImporte();
 
 
     protected:
