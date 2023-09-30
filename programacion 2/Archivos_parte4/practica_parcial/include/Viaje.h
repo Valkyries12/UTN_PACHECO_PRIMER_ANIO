@@ -31,6 +31,7 @@ class Viaje
 
         //metodos
         void calcularImporte();
+        std::string toString();
 
 
     protected:

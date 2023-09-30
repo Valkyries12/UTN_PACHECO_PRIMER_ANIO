@@ -91,3 +91,7 @@ void Viaje::calcularImporte() {
             break;
     }
 }
+
+std::string Viaje::toString() {
+    return getNumeroTarjeta() + ", " + std::to_string(getMedioTransporte()) + ", " + getFechaViaje().toString() + ", " + std::to_string(getImporte()) + ", " + std::to_string(getEstado());
+}

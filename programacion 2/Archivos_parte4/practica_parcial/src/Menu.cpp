@@ -206,3 +206,19 @@ void Menu::leerTarjetas() {
     seHaLeido ? setMensaje("Lectura completa.") : setMensaje("Ha ocurrido un error en la lectura.");
 }
 
+void Menu::leerViajes() {
+    Viaje viaje;
+    FILE* pFile;
+    bool seHaLeido = false;
+
+    pFile = fopen("viajes.dat", "rb");
+    if (pFile != nullptr) {
+        while(fread(&viaje, sizeof(Viaje), 1, pFile) == 1) {
+            std::cout << viaje.toString() << std::endl;
+            seHaLeido = true;
+        }
+    }
+
+    seHaLeido ? setMensaje("Lectura completa.") : setMensaje("Ha ocurrido un error en la lectura.");
+}
+

@@ -38,8 +38,17 @@ int main()
                     cout << menu.getMensaje() << endl;
                     system("pause");
                     system("cls");
+                    break;
+                case 4:
+                    system("cls");
+                    menu.leerViajes();
+                    cout << menu.getMensaje() << endl;
+                    system("pause");
+                    system("cls");
+                    break;
                 case 8:
                     std::cout << "Saliendo...\n\n";
+                    break;
             }
         }
 

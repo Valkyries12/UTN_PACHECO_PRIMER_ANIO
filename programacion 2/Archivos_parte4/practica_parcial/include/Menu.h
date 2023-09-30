@@ -36,6 +36,7 @@ class Menu
         Viaje crearViaje();
         void persistirViaje(Viaje viaje);
         void leerTarjetas();
+        void leerViajes();
 
     protected:
 
