@@ -35,10 +35,12 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Fecha.h" />
+		<Unit filename="include/Menu.h" />
 		<Unit filename="include/Tarjeta.h" />
 		<Unit filename="include/Viaje.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Fecha.cpp" />
+		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/Tarjeta.cpp" />
 		<Unit filename="src/Viaje.cpp" />
 		<Extensions />

@@ -12,11 +12,11 @@ void hardcodearDatos(Tarjeta tarjetas[], Viaje viajes[]);
 
 int main()
 {
-    int opcionMenu;
-    int numeroTarjeta;
+    //int opcionMenu;
+    //int numeroTarjeta;
     Tarjeta tarjetas[5];
     Viaje viajes[20];
-    Menu menu("1- Cantidad de viajes realizados en cada medio transporte.\n8- Salir. \n\nIngrese una opcion: ", "\nOpcion invalida. Reintente.\n", 8, 1, 3);
+    Menu menu("1- Nueva tarjeta SUBE.\n2- Cargar viaje.\n8- Salir. \n\nIngrese una opcion: ", 8, 1, 3);
 
     hardcodearDatos(tarjetas, viajes);
 
@@ -25,10 +25,10 @@ int main()
             switch(menu.getOpcionMenu()) {
                 case 1:
                     system("cls");
-                    cout << "Ingrese numero de tarjeta: ";
-                    cin >> numeroTarjeta;
+                    menu.persistirTarjetaSUBE(menu.crearTarjeta());
                     break;
                 case 2:
+                    system("cls");
 
                     break;
                 case 8:

@@ -2,15 +2,17 @@
 #include "cstring"
 
 #include "Menu.h"
+#include "Tarjeta.h"
 
 Menu::Menu()
 {
     //ctor
 }
 
-Menu::Menu(std::string mensaje, std::string mensajeError, int maximo, int minimo, int reintentos) {
-    setMensaje(mensaje);
-    setMensajeError(mensajeError);
+Menu::Menu(std::string mensajeMenu, int maximo, int minimo, int reintentos) {
+    setMensaje("");
+    setMensajeError("");
+    setMensajeMenu(mensajeMenu);
     setMaximo(maximo);
     setMinimo(minimo);
     setReintentos(reintentos);
@@ -54,6 +56,14 @@ void Menu::setReintentos(int reintentos) {
     _reintentos = reintentos;
 }
 
+std::string Menu::getMensajeMenu() const {
+    return _mensajeMenu;
+}
+
+void Menu::setMensajeMenu(std::string mensajeMenu) {
+    strcpy(_mensajeMenu, mensajeMenu.c_str());
+}
+
 std::string Menu::getMensaje() const {
     return _mensaje;
 }
@@ -81,7 +91,7 @@ bool Menu::dibujarMenu() {
     if (_maximo >= _minimo && _reintentos >= 0) {
         do {
             _reintentos--;
-            std::cout << _mensaje;
+            std::cout << _mensajeMenu;
             cargarCadena(buffer, 20);
             auxNumeroIngresado = std::stoi(buffer);
             if (auxNumeroIngresado >= _minimo && auxNumeroIngresado <= _maximo) {
@@ -89,6 +99,7 @@ bool Menu::dibujarMenu() {
                 isSuccesfull = true;
                 break;
             } else {
+                setMensajeError("\nOpcion invalida. Reintente.\n");
                 std::cout <<  _mensajeError;
             }
         } while (_reintentos > 0);
@@ -109,3 +120,45 @@ void Menu::cargarCadena(char *palabra, int tamano){
     palabra[i]='\0';
     fflush(stdin);
 }
+
+void Menu::persistirTarjetaSUBE(Tarjeta tarjeta) {
+    FILE* pFile;
+    bool sePersistio = false;
+    pFile = fopen("tarjetas.dat", "ab");
+    if (pFile != nullptr) {
+        sePersistio = fwrite(&tarjeta, sizeof(Tarjeta), 1, pFile);
+        sePersistio = fclose(pFile);
+        //sePersistio = true;
+    }
+
+    sePersistio ? setMensaje("Se ha creado y guardado la tarjeta correctamente.") : setMensajeError("Ha ocurrido un error al crear y guardar la tarjeta.");
+}
+
+Tarjeta Menu::crearTarjeta() {
+    char numeroTarjeta[17];
+    int dia, mes, anio;
+    char dniDuenio[9];
+    float saldo;
+
+    std::cout << "Ingrese un numero de Tarjeta: ";
+    cargarCadena(numeroTarjeta, 17);
+    std::cout << "Fecha de creacion" << std::endl;
+    std::cout << "Dia: ";
+    std::cin >> dia;
+    std::cout << "Mes: ";
+    std::cin >> mes;
+    std::cout << "Anio: ";
+    std::cin >> anio;
+    std::cout << "Ingrese DNI: ";
+    cargarCadena(dniDuenio, 9);
+    std::cout << "Saldo inicial: ";
+    std::cin >> saldo;
+
+    return Tarjeta(numeroTarjeta, dia, mes, anio, dniDuenio, saldo);
+}
+
+Viaje Menu::crearViaje() {
+    Viaje(std::string numeroTarjeta, int medioTransporte, int dia, int mes, int anio, float importe);
+    //TODO crear Viaje y persistir pero en otra funcion
+}
+

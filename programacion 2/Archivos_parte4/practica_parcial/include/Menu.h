@@ -1,13 +1,16 @@
 #ifndef MENU_H
 #define MENU_H
 
+#include "Tarjeta.h"
+#include "Viaje.h"
+
 
 class Menu
 {
     public:
         //constructores y destructores
         Menu();
-        Menu(std::string mensaje, std::string mensajeError, int maximo, int minimo, int reintentos);
+        Menu(std::string mensajeMenu, int maximo, int minimo, int reintentos);
         virtual ~Menu();
 
         //getters y setters
@@ -19,6 +22,8 @@ class Menu
         void setMaximo(int maximo);
         int getReintentos() const;
         void setReintentos(int reintentos);
+        std::string getMensajeMenu() const;
+        void setMensajeMenu(std::string mensajeMenu);
         std::string getMensaje() const;
         void setMensaje(std::string mensaje);
         std::string getMensajeError() const;
@@ -26,6 +31,9 @@ class Menu
 
         //metodos
         bool dibujarMenu();
+        Tarjeta crearTarjeta();
+        void persistirTarjetaSUBE(Tarjeta tarjeta);
+        Viaje crearViaje();
 
     protected:
 
@@ -35,11 +43,13 @@ class Menu
         int _minimo;
         int _maximo;
         int _reintentos;
+        char _mensajeMenu[300];
         char _mensaje[200];
         char _mensajeError[50];
 
         //metodos
         void cargarCadena(char *palabra, int tamano);
+
 };
 
 #endif // MENU_H
