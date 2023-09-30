@@ -1,5 +1,6 @@
 #include <iostream>
 #include "cstring"
+#include "string"
 
 #include "Menu.h"
 #include "Tarjeta.h"
@@ -220,5 +221,61 @@ void Menu::leerViajes() {
     }
 
     seHaLeido ? setMensaje("Lectura completa.") : setMensaje("Ha ocurrido un error en la lectura.");
+}
+
+void Menu::puntoA() {
+    char numeroTarjeta[17];
+    int qtyViajesColectivo = 0;
+    int qtyViajesTren = 0;
+    int qtyViajesSubte = 0;
+    bool tarjetaEncontrada = false;
+    FILE* pFile;
+    Tarjeta tarjeta;
+    Viaje viaje;
+
+    std::cout << "Ingrese numero de tarjeta: ";
+    cargarCadena(numeroTarjeta, 17);
+
+    pFile = fopen("tarjetas.dat", "rb");
+    if (pFile != nullptr) {
+        while(fread(&tarjeta, sizeof(Tarjeta), 1, pFile) == 1) {
+            if (strcmp(tarjeta.getNumeroTarjeta().c_str(), numeroTarjeta) == 0) {
+                tarjetaEncontrada = true;
+                break;
+            }
+        }
+        fclose(pFile);
+    }
+
+    if (tarjetaEncontrada) {
+        pFile = fopen("viajes.dat", "rb");
+        if (pFile != nullptr) {
+            while(fread(&viaje, sizeof(Viaje), 1, pFile) == 1) {
+                if (strcmp(viaje.getNumeroTarjeta().c_str(), numeroTarjeta) == 0) {
+                    //1 colecitvo, 2 subt, 3 tren
+                    switch(viaje.getMedioTransporte()) {
+                        case 1:
+                            qtyViajesColectivo++;
+                            break;
+                        case 2:
+                            qtyViajesSubte++;
+                            break;
+                        case 3:
+                            qtyViajesTren++;
+                            break;
+                    }
+                }
+            }
+            fclose(pFile);
+            std::cout << "Viajes en colectivo: " << qtyViajesColectivo << std::endl;
+            std::cout << "Viajes en tren: " << qtyViajesTren << std::endl;
+            std::cout << "Viajes en subte: " << qtyViajesTren << std::endl;
+            setMensaje("El punto ha ha sido resuelto exitosamente.");
+        }
+    } else {
+        setMensaje("No se ha encontrado el numero de tarjeta.");
+    }
+
+
 }
 

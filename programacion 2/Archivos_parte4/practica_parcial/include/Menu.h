@@ -37,6 +37,7 @@ class Menu
         void persistirViaje(Viaje viaje);
         void leerTarjetas();
         void leerViajes();
+        void puntoA();
 
     protected:
 
