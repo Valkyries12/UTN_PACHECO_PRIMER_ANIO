@@ -190,3 +190,19 @@ Viaje Menu::crearViaje() {
     return viaje;
 }
 
+void Menu::leerTarjetas() {
+    Tarjeta tarjeta;
+    FILE* pFile;
+    bool seHaLeido = false;
+
+    pFile = fopen("tarjetas.dat", "rb");
+    if (pFile != nullptr) {
+        while(fread(&tarjeta, sizeof(Tarjeta), 1, pFile) == 1) {
+            std::cout << tarjeta.toString() << std::endl;
+            seHaLeido = true;
+        }
+    }
+
+    seHaLeido ? setMensaje("Lectura completa.") : setMensaje("Ha ocurrido un error en la lectura.");
+}
+

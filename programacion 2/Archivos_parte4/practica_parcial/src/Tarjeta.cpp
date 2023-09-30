@@ -1,5 +1,6 @@
 #include <iostream>
 #include "cstring"
+#include "string"
 
 #include "Tarjeta.h"
 #include "Fecha.h"
@@ -62,4 +63,9 @@ bool Tarjeta::getEstado() const {
 
 void Tarjeta::setEstado(bool estado) {
     _estado = estado;
+}
+
+//metodos
+std::string Tarjeta::toString() {
+    return getNumeroTarjeta() + ", " + getFechaAlta().toString() + ", " + getDniDuenio() + ", " + std::to_string(getSaldo()) + ", " + std::to_string(getEstado());
 }

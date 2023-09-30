@@ -13,7 +13,7 @@ int main()
 {
     Tarjeta tarjetas[5];
     Viaje viajes[20];
-    Menu menu("1- Nueva tarjeta SUBE.\n2- Cargar viaje.\n8- Salir. \n\nIngrese una opcion: ", 8, 1, 3);
+    Menu menu("1- Nueva tarjeta SUBE.\n2- Cargar viaje.\n3- Ver tarjetas.\n4- Ver viajes.\n8- Salir. \n\nIngrese una opcion: ", 8, 1, 3);
 
 
     do {
@@ -29,10 +29,17 @@ int main()
                     system("cls");
                     menu.persistirViaje(menu.crearViaje());
                     cout << menu.getMensaje() << endl;
+                    system("pause");
                     system("cls");
                     break;
+                case 3:
+                    system("cls");
+                    menu.leerTarjetas();
+                    cout << menu.getMensaje() << endl;
+                    system("pause");
+                    system("cls");
                 case 8:
-                    std::cout << "Saliendo...";
+                    std::cout << "Saliendo...\n\n";
             }
         }
 

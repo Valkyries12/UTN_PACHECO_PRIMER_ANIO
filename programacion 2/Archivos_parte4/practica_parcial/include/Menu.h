@@ -35,6 +35,7 @@ class Menu
         void persistirTarjetaSUBE(Tarjeta tarjeta);
         Viaje crearViaje();
         void persistirViaje(Viaje viaje);
+        void leerTarjetas();
 
     protected:
 

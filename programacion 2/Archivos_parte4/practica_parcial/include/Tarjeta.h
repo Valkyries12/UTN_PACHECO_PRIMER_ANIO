@@ -23,6 +23,9 @@ class Tarjeta
         bool getEstado() const;
         void setEstado(bool estado);
 
+        //metodos
+        std::string toString();
+
     protected:
 
     private:
