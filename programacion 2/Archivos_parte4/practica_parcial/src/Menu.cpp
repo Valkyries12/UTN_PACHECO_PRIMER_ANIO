@@ -308,3 +308,35 @@ void Menu::puntoB() {
     isSuccesfull ? setMensaje(viajeAux.toString()) : setMensaje("Ha ocurrido un error al realizar el punto B.");
 }
 
+void Menu::puntoC() {
+    int mesMayorRecaudacion;
+    float auxRecaudacion;
+    float recaudacionPorMes[12] = {0};
+    std::string meses[12] = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
+    Viaje viajeActual;
+    FILE* pFile;
+    bool isSuccesfull = false;
+
+    pFile = fopen("viajes.dat", "rb");
+    if (pFile != nullptr) {
+        while(fread(&viajeActual, sizeof(Viaje), 1, pFile) == 1) {
+            if (viajeActual.getMedioTransporte() == 2) {
+                recaudacionPorMes[viajeActual.getFechaViaje().getMes() -1] += viajeActual.getImporte();
+            }
+        }
+        fclose(pFile);
+        isSuccesfull = true;
+    }
+
+    auxRecaudacion = recaudacionPorMes[0];
+    for (int i = 0; i < 12; i++) {
+        if (recaudacionPorMes[i] < auxRecaudacion) {
+            auxRecaudacion = recaudacionPorMes[i];
+            mesMayorRecaudacion = i;
+        }
+    }
+
+    isSuccesfull ? setMensaje("El mes con mayor recaudacion es " + meses[mesMayorRecaudacion]) : setMensaje("Ha ocurrido un error al calcular el punto C.");
+
+}
+

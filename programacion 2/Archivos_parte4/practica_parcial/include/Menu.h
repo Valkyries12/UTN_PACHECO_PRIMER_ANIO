@@ -39,6 +39,7 @@ class Menu
         void leerViajes();
         void puntoA();
         void puntoB();
+        void puntoC();
 
     protected:
 
